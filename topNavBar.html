@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>顶部导航栏</title>
+    <style>
+      html,
+      body,
+      div,
+      ul,
+      li,
+      a,
+      span {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        background-color: #000;
+      }
+      .top-nav-bar {
+        padding: 20px 16px;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .clearfix:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .top-nav-item {
+        float: left;
+        list-style-type: none;
+        margin: 0 17px;
+      }
+      .top-nav-list {
+        padding-top: 7px;
+        padding-bottom: 6px;
+      }
+      .top-nav-item > a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #b7b7b7;
+        font-size: 12px;
+        padding: 5px 0;
+        display: block;
+      }
+      .top-nav-item > a:hover {
+        border-bottom: 3px solid #f2545d;
+      }
+      .logo {
+        color: inherit;
+        text-decoration: none;
+        font-size: 24px;
+        font-family: 'Arial Black';
+        padding-top: 3px;
+        padding-bottom: 4px;
+      }
+      .logo > .rs {
+        color: #e6686a;
+        margin-right: 4px;
+      }
+      .logo > .card {
+        color: #9a9da2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-nav-bar clearfix">
+      <a href="#" class="fl logo"> <span class="rs">RS</span><span class="card">card</span> </a>
+      <ul class="top-nav-list fr clearfix">
+        <li class="top-nav-item"><a href="">关于</a></li>
+        <li class="top-nav-item"><a href="">技能</a></li>
+        <li class="top-nav-item"><a href="">作品</a></li>
+        <li class="top-nav-item"><a href="">博客</a></li>
+        <li class="top-nav-item"><a href="">日历</a></li>
+        <li class="top-nav-item"><a href="">联系方式</a></li>
+        <li class="top-nav-item"><a href="">其它</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
